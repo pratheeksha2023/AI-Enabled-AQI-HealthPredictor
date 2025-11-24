@@ -6,7 +6,8 @@
 
 <p align="center">
 A clean, data-driven project that predicts health impact levels based on Air Quality Index (AQI).  
-Built originally as an academic backend assignment and later enhanced with a self-interest.
+Built originally as an academic backend assignment and later enhanced independently with additional modelling and a frontend interface.
+
 </p>
 
 ---
@@ -43,6 +44,23 @@ The backend manages data cleaning, training, and prediction, while the frontend 
 ├── frontend/ # Frontend UI (added later)
 
 └── README.md
+
+---
+
+## Dataset Information
+The project uses an AQI dataset (`aqi.csv`) containing historical air-quality readings.  
+Key columns include:
+
+- **Date** – Timestamp of the recorded AQI  
+- **AQI Value** – Overall Air Quality Index  
+- **PM2.5, PM10, NO₂, SO₂, CO, O₃** – Pollutant concentrations (if present)  
+- **Health Category** – General AQI-based category (Good/Moderate/Poor/etc.)
+
+The dataset is used for:
+- Training regression models  
+- Identifying pollution–health patterns  
+- Generating prediction values for the frontend
+
 
 ---
 
